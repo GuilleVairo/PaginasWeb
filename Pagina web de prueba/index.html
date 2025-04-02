@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Nacional de Football</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para iconos -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+        .header {
+            background-color: #002147; /* Azul más oscuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .carousel-item img {
+            max-height: 500px; /* Altura máxima del carrusel */
+            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+        }
+        .card {
+            border: none; /* Sin borde en las tarjetas */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
+            transition: transform 0.3s; /* Transición suave al pasar el mouse */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Club Nacional de Football</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="idolos.html">Ídolos</a></li>
+                <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+            </ul>
+            <form class="form-inline ml-3" id="searchForm">
+                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Buscar" id="searchInput">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<header class="header">
+    <h1 class="display-4" style="color: white;">Club Nacional de Football</h1>
+    <img src="images/escudo.png" alt="Escudo del Club Nacional de Football" class="img-fluid" style="max-width: 150px;">
+</header>
+
+<div class="container mt-4">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hinchada1.jpg" class="d-block w-100" alt="Hinchada 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>La Pasión de la Hinchada</h5>
+                    <p>La hinchada de Nacional siempre presente en cada partido.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hinchada2.jpg" class="d-block w-100" alt="Hinchada 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Celebraciones Inolvidables</h5>
+                    <p>Momentos de alegría y celebración en el Estadio Gran Parque Central.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/jugador1.jpg" class="d-block w-100" alt="Jugador 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Jugadores Legendarios</h5>
+                    <p>Conoce a los ídolos que han dejado huella en la historia del club.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/jugador2.jpg" class="d-block w-100" alt="Jugador 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Victorias Históricas</h5>
+                    <p>Revive los momentos más emocionantes de nuestras victorias.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <section class="mt-4">
+        <h2 class="text-center">Últimas Noticias</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Victoria en el Clásico</h5>
+                        <p class="card-text">Nacional se impuso a su eterno rival en un emocionante partido.</p>
+                        <a href="#" class="btn btn-primary">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevo Refuerzo</h5>
+                        <p class="card-text">El club anuncia la llegada de el chileno eduardo vargas para la temporada.</p>
+                        <a href="#" class="btn btn-primary">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrenamientos Abiertos</h5>
+                        <p class="card-text">Los hinchas podrán asistir a los entrenamientos del equipo.</p>
+                        <a href="#" class="btn btn-primary">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-4">
+        <h2 class="text-center">Eventos Próximos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Partido vs. Peñarol</h5>
+                        <p class="card-text">Fecha: 15 de octubre de 2025</p>
+                        <p class="card-text">Hora: 19:00</p>
+                        <a href="#" class="btn btn-primary">Comprar Entradas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Finalizacion del campeonato</h5>
+                        <p class="card-text">Fecha: 1 de noviembre de 2025</p>
+                        <p class="card-text">Hora: 18:00</p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Día del Hincha</h5>
+                        <p class="card-text">Fecha: 30 de noviembre de 2025</p>
+                        <p class="card-text">Hora: 15:00</p>
+                        <a href="#" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-4">
+        <h2 class="text-center">Historia del Club</h2>
+        <p class="text-center">El Club Nacional de Football fue fundado el 14 de mayo de 1899 en Montevideo, Uruguay. Desde entonces, ha sido uno de los clubes más exitosos y prestigiosos de América del Sur.</p>
+        <ul class="list-group">
+            <li class="list-group-item">Fundación: 14 de mayo de 1899</li>
+            <li class="list-group-item">Títulos Nacionales: 49</li>
+            <li class="list-group-item">Títulos Internacionales: 21</li>
+            <li class="list-group-item">Estadio: Gran Parque Central</li>
+        </ul>
+    </section>
+
+    <section class="mt-4">
+        <h2 class="text-center">Primer estadio mundialista</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/galeria1.jpg" class="img-fluid mb-2" alt="Galería 1">
+            </div>
+            <div class="col-md-4">
+                <img src="images/galeria2.jpg" class="img-fluid mb-2" alt="Galería 2">
+            </div>
+            <div class="col-md-4">
+                <img src="images/galeria3.jpg" class="img-fluid mb-2" alt="Galería 3">
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="text-center py-3 bg-danger text-white">
+    <p>&copy; 2025 Club Nacional de Football</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío del formulario
+        const query = document.getElementById('searchInput').value;
+        alert("Buscando: " + query);
+        // Aquí puedes agregar la lógica para realizar la búsqueda en tu sitio
+    });
+</script>
+</body>

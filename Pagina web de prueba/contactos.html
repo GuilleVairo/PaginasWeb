@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Club Nacional de Football</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+        .contact-header {
+            background-color: #002147; /* Azul más oscuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #C8102E; /* Rojo */
+            border-color: #C8102E; /* Rojo */
+        }
+        .btn-primary:hover {
+            background-color: #003DA5; /* Azul */
+            border-color: #003DA5; /* Azul */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Club Nacional de Football</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="idolos.html">Ídolos</a></li>
+                <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="contact-header">
+    <h1>Contacto</h1>
+    <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo.</p>
+</header>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 contact-form">
+            <h2 class="text-center">Formulario de Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-3 bg-danger text-white mt-5">
+    <p>&copy; 2025 Club Nacional de Football</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío del formulario
+        alert("Gracias por tu mensaje, nos pondremos en contacto contigo pronto.");
+        // Aquí puedes agregar la lógica para enviar el formulario a un servidor o procesarlo como desees.
+    });
+</script>
+</body>
+</html>

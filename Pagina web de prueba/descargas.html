@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas - Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .wallpaper img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .wallpaper a {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .wallpaper a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descargas - Wallpapers</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="wallpaper">
+                <img src="wallpaper1.jpg" alt="Wallpaper 1">
+                <a href="wallpaper1.jpg" download>Descargar</a>
+            </div>
+            <div class="wallpaper">
+                <img src="wallpaper2.jpg" alt="Wallpaper 2">
+                <a href="wallpaper2.jpg" download>Descargar</a>
+            </div>
+            <div class="wallpaper">
+                <img src="wallpaper3.jpg" alt="Wallpaper 3">
+                <a href="wallpaper3.jpg" download>Descargar</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Club Nacional de Football</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+        .header {
+            background-color: #002147; /* Azul más oscuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .news-card {
+            border: none; /* Sin borde en las tarjetas */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
+            transition: transform 0.3s; /* Transición suave al pasar el mouse */
+        }
+        .news-card:hover {
+            transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+        }
+        .btn-primary {
+            background-color: #C8102E; /* Rojo */
+            border-color: #C8102E; /* Rojo */
+        }
+        .btn-primary:hover {
+            background-color: #003DA5; /* Azul */
+            border-color: #003DA5; /* Azul */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Club Nacional de Football</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="idolos.html">Ídolos</a></li>
+                <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="header">
+    <h1>Últimas Noticias</h1>
+    <p>Entérate de las novedades y eventos del Club Nacional de Football.</p>
+</header>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Noticia 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card news-card">
+                <img src="images/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="card-body">
+                    <h5 class="card-title">Victoria en el Clásico</h5>
+                    <p class="card-text">Nacional se impuso a su eterno rival en un emocionante partido, consolidando su posición en la tabla.</p>
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card news-card">
+                <img src="images/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                <div class="card-body">
+                    <h5 class="card-title">Nuevo Refuerzo para la Temporada</h5>
+                    <p class="card-text">El club anuncia la llegada de un nuevo jugador que promete aportar mucho al equipo.</p>
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card news-card">
+                <img src="images/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                <div class="card-body">
+                    <h5 class="card-title">Entrenamientos Abiertos a los Hinchas</h5>
+                    <p class="card-text">Los hinchas podrán asistir a los entrenamientos del equipo y conocer a sus ídolos.</p>
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Noticia 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card news-card">
+                <img src="images/noticia4.jpg" class="card-img-top" alt="Noticia 4">
+                <div class="card-body">
+                    <h5 class="card-title">Celebración del Día del Hincha</h5>
+                    <p class="card-text">Un evento especial para todos los hinchas, con actividades y sorpresas.</p>
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noticia 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card news-card">
+                <img src="images/noticia5.jpg" class="card-img-top" alt="Noticia 5">
+                <div class="card-body">
+                    <h5 class="card-title">Análisis del Último Partido</h5>
+                    <p class="card-text">Un análisis detallado del rendimiento del equipo en el último encuentro.</p>
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noticia 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card news-card">
+                <img src="images/noticia6.jpg" class="card-img-top" alt="Noticia 6">
+                <div class="card-body">
+                    <h5 class="card-title">Entrevista Exclusiva con Martin Lasarte</h5>
+                    <p class="card-text">El entrenador comparte sus expectativas y planes para el futuro del club.</p>
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-3 bg-danger text-white mt-5">
+    <p>&copy; 2025 Club Nacional de Football</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

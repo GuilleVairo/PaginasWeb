@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Club Nacional de Football</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+        .header {
+            background-color: #002147; /* Azul más oscuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .event-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .event-card:hover {
+            transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Club Nacional de Football</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="idolos.html">Ídolos</a></li>
+                <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="header">
+    <h1>Eventos del Club Nacional de Football</h1>
+    <p>Entérate de los próximos eventos y actividades del club.</p>
+</header>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Evento 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="images/evento1.jpg" class="card-img-top" alt="Partido vs. Peñarol">
+                <div class="card-body">
+                    <h5 class="card-title">Partido vs. Peñarol</h5>
+                    <p class="card-text">Fecha: 15 de octubre de 2025</p>
+                    <p class="card-text">Hora: 19:00</p>
+                    <a href="#" class="btn btn-primary">Comprar Entradas</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="images/evento2.jpg" class="card-img-top" alt="Presentación del Equipo">
+                <div class="card-body">
+                    <h5 class="card-title">Presentación del Equipo</h5>
+                    <p class="card-text">Fecha: 1 de noviembre de 2025</p>
+                    <p class="card-text">Hora: 18:00</p>
+                    <a href="#" class="btn btn-primary">Más Información</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="images/evento3.jpg" class="card-img-top" alt="Día del Hincha">
+                <div class="card-body">
+                    <h5 class="card-title">Día del Hincha</h5>
+                    <p class="card-text">Fecha: 28 de abril de 2025</p>
+                    <p class="card-text">Hora: 15:00</p>
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Evento 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="images/evento4.jpg" class="card-img-top" alt="Entrenamientos Abiertos">
+                <div class="card-body">
+                    <h5 class="card-title">Entrenamientos Abiertos</h5>
+                    <p class="card-text">Fecha: 10 de diciembre de 2025</p>
+                    <p class="card-text">Hora: 10:00</p>
+                    <a href="#" class="btn btn-primary">Asistir</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="images/evento5.jpg" class="card-img-top" alt="Torneo de Aficionados">
+                <div class="card-body">
+                    <h5 class="card-title">Torneo de Aficionados</h5>
+                    <p class="card-text">Fecha: 20 de diciembre de 2025</p>
+                    <p class="card-text">Hora: 09:00</p>
+                    <a href="#" class="btn btn-primary">Inscribirse</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="images/evento6.jpg" class="card-img-top" alt="Fiesta de Fin de Año">
+                <div class="card-body">
+                    <h5 class="card-title">Fiesta de Fin de Año</h5>
+                    <p class="card-text">Fecha: 31 de diciembre de 2025</p>
+                    <p class="card-text">Hora: 20:00</p>
+                    <a href="#" class="btn btn-primary">Comprar Entradas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-3 bg-danger text-white mt-5">
+    <p>&copy; 2025 Club Nacional de Football</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+</html>

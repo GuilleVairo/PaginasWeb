@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títulos - Club Nacional de Football</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+        .header {
+            background-color: #002147; /* Azul más oscuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .stats-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .stats-card:hover {
+            transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+        }
+        .trophy-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .trophy-description {
+            font-size: 1rem;
+            color: #555;
+        }
+        .modal-content {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Club Nacional de Football</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="idolos.html">Ídolos</a></li>
+                <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+               
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="header">
+    <h1>Títulos del Club Nacional de Football</h1>
+    <p>Un recorrido por la historia de nuestros logros y campeonatos.</p>
+</header>
+
+<div class="container mt-5">
+    <div class="row text-center">
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="card stats-card">
+                <img src="images/campeonatos_uruguayos.jpg" class="card-img-top" alt="Campeonatos Uruguayos">
+                <div class="card-body">
+                    <h5 class="trophy-title">49 Campeonatos Uruguayos</h5>
+                    <p class="trophy-description">El Club Nacional de Football ha ganado un total de 49 campeonatos uruguayos, siendo el club más exitoso en la historia del fútbol uruguayo.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalCampeonatos">Más Información</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="card stats-card">
+                <img src="images/copa_libertadores.jpg" class="card-img-top" alt="Copa Libertadores">
+                <div class="card-body">
+                    <h5 class="trophy-title">3 Copas Libertadores</h5>
+                    <p class="trophy-description">Nacional ha conquistado la Copa Libertadores en tres ocasiones: 1971, 1980 y 1988, estableciendo su grandeza en América del Sur.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalLibertadores">Más Información</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="card stats-card">
+                <img src="images/copa_intercontinental.jpg" class="card-img-top" alt="Copa Intercontinental">
+                <div class="card-body">
+                    <h5 class="trophy-title">3 Títulos Intercontinentales</h5>
+                    <p class="trophy-description">El club ha ganado la Copa Intercontinental en tres ocasiones, enfrentando a los campeones de Europa y demostrando su grandeza a nivel mundial.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalIntercontinental">Más Información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-12 mb-4">
+            <div class="card stats-card">
+                <div class="card-body">
+                    <h5 class="trophy-title">167 Títulos en Total</h5>
+                    <p class="trophy-description">Con un total de 167 títulos oficiales, Nacional es el club más laureado de Uruguay y uno de los más exitosos de América.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modales para más información -->
+<div class="modal fade" id="modalCampeonatos" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Detalles de los Campeonatos Uruguayos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>sss
+            <div class="modal-body">
+                <p>Aquí puedes incluir más detalles sobre los campeonatos uruguayos, como los años en que se ganaron, los rivales, y momentos destacados.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalLibertadores" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Detalles de las Copas Libertadores</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Detalles sobre las Copas Libertadores ganadas, incluyendo los años y los rivales enfrentados.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalIntercontinental" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Detalles de los Títulos Intercontinentales</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Detalles sobre los títulos intercontinentales ganados, incluyendo los años y los rivales enfrentados.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4">
+    <p>&copy; 2025 Club Nacional de Football. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

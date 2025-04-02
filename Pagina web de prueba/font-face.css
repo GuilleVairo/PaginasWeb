@@ -1,0 +1,118 @@
+/* Fuentes Personalizadas */
+@font-face {
+    font-family: "Kapra Bold";
+    src: url("/assets/fonts/kapra-bold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kapra Condensed";
+    src: url("/assets/fonts/kapra-condensed.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Staatliches";
+    src: url("/assets/fonts/Staatliches-Regular.woff2") format("woff2"),
+         url("/assets/fonts/Staatliches-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "King Richard";
+    src: url("/assets/fonts/king-richard.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CNF 2024";
+    src: url("/assets/fonts/cnf-2024.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilos Generales */
+body {
+    background-color: #f4f4f4; /* Color de fondo claro */
+    font-family: "Kapra Bold", sans-serif; /* Usar Kapra Bold como fuente principal */
+}
+
+h1 {
+    font-family: "Staatliches", cursive; /* Usar Staatliches para encabezados */
+}
+
+h2 {
+    font-family: "Kapra Condensed", sans-serif; /* Usar Kapra Condensed para subtítulos */
+}
+
+.header {
+    background-color: #002147; /* Azul más oscuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-height: 500px; /* Altura máxima del carrusel */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.card {
+    border: none; /* Sin borde en las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
+    transition: transform 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+footer {
+    background-color: #C8102E; /* Rojo */
+    color: white; /* Color del texto en el pie de página */
+    padding: 20px 0; /* Espaciado en el pie de página */
+}
+
+footer p {
+    margin: 0; /* Sin margen en el texto del pie de página */
+}
+
+h2 {
+    margin-top: 20px; /* Espaciado superior para los encabezados */
+    font-weight: bold; /* Negrita para los encabezados */
+    color: #003DA5; /* Color azul para los encabezados */
+}
+
+.list-group-item {
+    background-color: #fff; /* Fondo blanco para los elementos de la lista */
+    border: 1px solid #ddd; /* Borde gris claro */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Color de fondo al pasar el mouse */
+}
+
+.btn-primary {
+    background-color: #003DA5; /* Color de fondo del botón */
+    border-color: #003DA5; /* Color del borde del botón */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+.btn-primary:hover {
+    background-color: #C8102E; /* Color de fondo del botón al pasar el mouse */
+    border-color: #C8102E; /* Color del borde del botón al pasar el mouse */
+}
+
+.img-fluid {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}s

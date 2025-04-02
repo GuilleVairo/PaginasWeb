@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ídolos - Club Nacional de Football</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+        .header {
+            background-color: #002147; /* Azul más oscuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .idol-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .idol-card:hover {
+            transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+        }
+        .idol-image {
+            height: 200px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Mantiene la proporción de la imagen */
+            border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Club Nacional de Football</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="idolos.html">Ídolos</a></li>
+                <li class="nav-item"><a class="nav-link" href="titulos.html">Títulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="header">
+    <h1>Ídolos del Club Nacional de Football</h1>
+    <p>Conoce a los grandes que han dejado huella en la historia del club.</p>
+</header>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Ídolo: Álvaro Recoba -->
+        <div class="col-md-4 mb-4">
+            <div class="card idol-card">
+                <img src="images/alvaro_recoba.jpg" class="card-img-top idol-image" alt="Álvaro Recoba">
+                <div class="card-body">
+                    <h5 class="card-title">Álvaro Recoba</h5>
+                    <p class="card-text">Considerado uno de los mejores jugadores en la historia del club, Álvaro Recoba es conocido por su habilidad técnica y su potente disparo. Jugó en Nacional entre 1994 y 1997, y luego regresó en 2013.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ídolo: Hugo De León -->
+        <div class="col-md-4 mb-4">
+            <div class="card idol-card">
+                <img src="images/hugo_de_leon.jpg" class="card-img-top idol-image" alt="Hugo De León">
+                <div class="card-body">
+                    <h5 class="card-title">Hugo De León</h5>
+                    <p class="card-text">Defensor central destacado, Hugo De León fue un pilar en la defensa de Nacional durante los años 80 y 90. Su liderazgo y compromiso lo convirtieron en un ícono del club.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ídolo: Abdon Porte -->
+        <div class="col-md-4 mb-4">
+            <div class="card idol-card">
+                <img src="images/abdon_porte.jpg" class="card-img-top idol-image" alt="Abdon Porte">
+                <div class="card-body">
+                    <h5 class="card-title">Abdón Porte</h5>
+                    <p class="card-text">Un verdadero símbolo del club, Abdón Porte es recordado por su dedicación y amor por la camiseta. Su legado perdura en la historia de Nacional.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ídolo: Héctor Scarone -->
+        <div class="col-md-4 mb-4">
+            <div class="card idol-card">
+                <img src="images/hector_scarone.jpg" class="card-img-top idol-image" alt="Héctor Scarone">
+                <div class="card-body">
+                    <h5 class="card-title">Héctor Scarone</h5>
+                    <p class="card-text">Conocido como "El Mago", Scarone fue un talentoso delantero que dejó una huella imborrable en el club. Su visión de juego y habilidades lo convirtieron en un ícono de Nacional.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ídolo: Gonzalo Bergessio -->
+        <div class="col-md-4 mb-4">
+            <div class="card idol-card">
+                <img src="images/gonzalo_bergessio.jpg" class="card-img-top idol-image" alt="Gonzalo Bergessio">
+                <div class="card-body">
+                    <h5 class="card-title">Gonzalo Bergessio</h5>
+                    <p class="card-text">Gonzalo Bergessio es uno de los máximos goleadores del club en este siglo. Su capacidad para marcar goles y su entrega en el campo lo han convertido en un ícono para los hinchas de Nacional.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-3 bg-danger text-white mt-5">
+    <p>&copy; 2025 Club Nacional de Football</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
