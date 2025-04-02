@@ -1,0 +1,615 @@
+body {
+    font-family: "Space Grotesk", "Noto Sans", sans-serif;
+    background-color: #141414;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+header {
+  background-color: #333; /* Color de fondo del encabezado */
+  color: white; /* Color del texto en el encabezado */
+  padding: 20px 0; /* Relleno superior e inferior */
+}
+
+.container {
+  display: flex; /* Usar flexbox para alinear elementos */
+  justify-content: space-between; /* Espacio entre logo y navegación */
+  align-items: center; /* Centrar verticalmente */
+  max-width: 1600px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  padding: 0 20px; /* Relleno lateral */
+}
+
+.logo {
+  display: flex; /* Usar flexbox para alinear logo y nombre */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.logo img {
+  height: 50px; /* Altura del logo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para efectos */
+  margin-right: 10px; /* Espacio entre el logo y el nombre */
+}
+
+.company-name {
+  font-size: 25px; /* Tamaño de la fuente del nombre de la empresa (ajustado a 32px) */
+  font-weight: bold; /* Negrita para el nombre de la empresa */
+  color: white; /* Color del texto del nombre de la empresa */
+}
+
+nav ul {
+  list-style-type: none; /* Eliminar viñetas de la lista */
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar relleno */
+  display: flex; /* Usar flexbox para alinear elementos de la lista */
+}
+
+nav ul li {
+  margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+  color: white; /* Color del texto de los enlaces */
+  text-decoration: none; /* Eliminar subrayado */
+  padding: 10px 15px; /* Relleno para los enlaces */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones para efectos */
+}
+
+nav ul li a:hover {
+  background-color: #ffcc00; /* Fondo amarillo al pasar el cursor */
+  color: #333; /* Cambiar color del texto al pasar el cursor */
+}
+
+nav ul li a i {
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+
+
+
+
+.hero {
+    font-size:large;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.625rem;
+    line-height: 4.375rem;
+    font-weight: 750
+}
+
+.hero h2 {
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    font-weight: 350
+}
+
+/* From Uiverse.io by MuhammadHasann */ 
+.icon-windows {
+    width: 1.5rem; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del ícono */
+    vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
+    margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+}
+button {
+    position: relative;
+    padding: 15px 45px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    cursor: pointer;
+    border: 1px solid #fec195;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  }
+  
+  button:hover {
+    border: 1px solid #f3b182;
+    background: linear-gradient(
+      85deg,
+      #fec195,
+      #fcc196,
+      #fabd92,
+      #fac097,
+      #fac39c
+    );
+    animation: wind 2s ease-in-out infinite;
+  }
+  
+  @keyframes wind {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    0% {
+      background-position: 50% 100%;
+    }
+  
+    0% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    transform-origin: 0 0;
+    transform: rotate(10deg);
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+  }
+  
+  button:hover .icon-1 {
+    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+    transform: rotate(10deg);
+  }
+  
+  @keyframes slay-1 {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .icon-2 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 12px;
+    transform-origin: 50% 0;
+    transform: rotate(10deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  }
+  
+  button:hover .icon-2 {
+    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  .icon-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    transform-origin: 50% 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  }
+  
+  button:hover .icon-3 {
+    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+
+
+.features {
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}
+
+.features h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.features p {
+    font-size: 6,5em;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.card-container {
+  display: flex; /* Flexbox para alinear las tarjetas en fila */
+  justify-content: space-evenly ; /* Espacio entre las tarjetas */
+  margin: 2rem; /* Margen alrededor del contenedor */
+}
+
+.card {
+  position: relative; /* Permitir posicionamiento absoluto de elementos hijos */
+  margin-left: 1rem; /* Margen lateral entre tarjetas */
+  margin-right: 1rem;
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+  align-items: stretch; /* Stretch items to fill the container */
+  margin-bottom: 2rem; /* Space below the card */
+  width: 320px; /* Fixed width for the card */
+  flex-direction: column; /* Stack children vertically */
+  border-radius: 0.25rem; /* Rounded corners */
+  background-color: rgba(17, 24, 39, 1); /* Dark background color */
+  padding: 1.5rem; /* Padding inside the card */
+}
+
+.header {
+  display: flex; /* Flexbox layout for header */
+  flex-direction: column; /* Stack title and price vertically */
+}
+
+.title {
+  font-size: 1.5rem; /* Font size for the title */
+  line-height: 2rem; /* Line height for spacing */
+  font-weight: 700; /* Bold font weight */
+  color: #fff; /* White text color */
+}
+
+.price-gratis {
+  background-color: #28a745; /* Color de fondo verde */
+  color: #fff; /* Color del texto */
+  border-radius: 1.25rem; /* Bordes redondeados */
+  padding: 0.25rem 1.5rem; /* Espaciado interno */
+  font-size: 2.25rem; /* Tamaño de fuente grande para el precio */
+  line-height: 1; /* Altura de línea simple */
+  font-weight: 700; /* Peso de fuente en negrita */
+  display: inline-block; /* Permitir que el fondo se ajuste al texto */
+  margin-bottom: 0.5rem; /* Espacio inferior para separar del resto del contenido */
+}
+
+.price {
+  font-size: 3.25rem; /* Large font size for price */
+  line-height: 1; /* Single line height */
+  font-weight: 700; /* Bold font weight */
+  color: #fff; /* White text color */
+}
+
+.recommended-badge {
+  background-color: #ff9800; /* Color de fondo naranja */
+  color: #fff; /* Color del texto */
+  border-radius: 0.25rem; /* Bordes redondeados */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  font-weight: 700; /* Peso de la fuente */
+  position: absolute; /* Posicionamiento absoluto */
+  top: -1.20rem; /* Distancia desde la parte superior */
+  right: -0rem; /* Distancia desde la derecha */
+  z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+.desc {
+  margin-top: 0.75rem; /* Space above the description */
+  margin-bottom: 0.75rem; /* Space below the description */
+  line-height: 1.625; /* Line height for readability */
+  color: rgba(156, 163, 175, 1); /* Light gray text color */
+}
+
+.lists {
+  margin-bottom: 1.5rem; /* Space below the list */
+  flex: 1 1 0%; /* Allow the list to grow and shrink */
+  color: rgba(156, 163, 175, 1); /* Light gray text color */
+}
+
+.lists .list {
+  margin-bottom: 0.5rem; /* Space between list items */
+  display: flex; /* Flexbox layout for list items */
+  margin-left: 0.5rem; /* Indentation for list items */
+}
+
+.lists .list svg {
+  height: 1.5rem; /* Icon height */
+  width: 1.5rem; /* Icon width */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+  margin-right: 0.5rem; /* Space between icon and text */
+  color: rgba(167, 139, 250, 1); /* Light purple color for icons */
+}
+
+.action {
+  border: none; /* No border */
+  outline: none; /* No outline */
+  display: inline-block; /* Inline block for button */
+  border-radius: 0.25rem; /* Rounded corners */
+  background-color: rgba(167, 139, 250, 1); /* Light purple background */
+  padding-left: 1.25rem; /* Padding on the left */
+  padding-right: 1.25rem; /* Padding on the right */
+  padding-top: 0.75rem; /* Padding on the top */
+  padding-bottom: 0.75rem; /* Padding on the bottom */
+  text-align: center; /* Center text */
+  font-weight: 600; /* Semi-bold font weight */
+  letter-spacing: 0.05em; /* Slightly increased letter spacing */
+  color: rgba(17, 24, 39, 1); /* Dark text color */
+}
+
+
+
+
+
+
+
+.etiqueta {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+    display: inline-block; /* Para que se ajuste al contenido */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    font-weight: bold; /* Negrita */
+    background-color: #FFD700; /* Color dorado para el plan recomendado */
+    color: black; /* Color del texto */
+}
+
+.pricing {
+    display: flex; /* Usar flexbox para alinear los precios */
+    justify-content: center; /* Centrar los precios */
+    align-items: baseline; /* Alinear los elementos en la línea base */
+}
+
+.pricing .integer {
+    font-size: 3rem; /* Tamaño de fuente para la parte entera del precio */
+    font-weight: 750; /* Peso de la fuente */
+    margin-bottom: 0; /* Sin margen inferior */
+}
+
+.pricing .decimal {
+    font-size: 1.0rem; /* Tamaño de fuente para la parte decimal del precio */
+    line-height: 2.125rem; /* Altura de línea */
+}
+
+.paragraph {
+    font-size: 1.125rem; /* Tamaño de fuente */
+    line-height: 1.0rem; /* Altura de línea */
+}
+
+.btn {
+    background-color: #359EFF; /* Color de fondo del botón */
+    color: #FFFFFF; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Efecto de hover */
+}
+
+.btn:hover {
+    background-color: #2A8BC4; /* Color de fondo al pasar el mouse */
+}
+
+.btn-gratis {
+    background-color: green; /* Color de fondo del botón "Descargar Gratis" */
+    color: white; /* Color del texto del botón "Descargar Gratis" */
+}
+
+.btn-gratis:hover {
+    background-color: darkgreen; /* Color de fondo al pasar el mouse para "Descargar Gratis" */
+}
+
+.benefits {
+    margin-top: 10px; /* Espacio entre el botón y los beneficios */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Tamaño de fuente para texto grande */
+}
+
+.text-3xl {
+    font-size: 1.875rem; /* Tamaño de fuente para texto extra grande */
+}
+
+.device-input {
+    margin-top: 10px; /* Espacio superior */
+}
+
+.device-input label {
+    display: block; /* Hacer que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio inferior */
+    color: #FFFFFF; /* Color del texto de la etiqueta */
+}
+
+.device-input select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 2px solid #359EFF; /* Borde azul */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #1B2127; /* Fondo oscuro */
+    color: #FFFFFF; /* Color del texto */
+    font-size: 1rem; /* Tamaño de fuente */
+    appearance: none; /* Eliminar el estilo predeterminado del navegador */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23359EFF" viewBox="0 0 16 16"><path d="M1.5 5.5L8 12l6.5-6.5H1.5z"/></svg>'); /* Icono de flecha */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-position: right 10px center; /* Posicionar la imagen de fondo */
+    background-size: 12px; /* Tamaño de la imagen de fondo */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+.device-input select:hover {
+    border-color: #2A8BC4; /* Cambiar el color del borde al pasar el mouse */
+}
+
+.device-input select:focus {
+    outline: none; /* Eliminar el contorno predeterminado */
+    border-color: #00A4EF; /* Cambiar el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(53, 158, 255, 0.5); /* Sombra de enfoque */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reviews-section {
+  padding: 3rem;
+  background-color:#141414; /* Color de fondo de la sección */
+}
+
+.reviews-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white; /* Color del encabezado */
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: row; /* Disposición horizontal */
+  justify-content: center; /* Centrar las tarjetas */
+  gap: 1.5rem; /* Espaciado entre las tarjetas */
+  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en pantallas más pequeñas */
+}
+
+.review-card {
+    background-color: #1B2127;
+    padding: 2rem;
+    max-width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+    transition: transform 0.2s; /* Efecto de transición al pasar el mouse */
+}
+
+.review-card:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el mouse */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.header .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    background-color: royalblue; /* Color de fondo para la imagen */
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    grid-gap: 0.125rem;
+    gap: 0.125rem;
+    color: rgba(34, 197, 94, 1); /* Color de las estrellas */
+}
+
+.stars svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.name {
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: rgb(211, 217, 227); /* Color del nombre */
+}
+
+.message {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 1); /* Color del mensaje en blanco para contraste */
+}
+
+
+
+
+
+.font-bold {
+    font-weight: bold; /* Negrita */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #27313A;
+    color: #FFFFFF;
+}
+body {
+  font-family: "Space Grotesk", "Noto Sans", sans-serif;
+  background-color: #f8f9fa; /* Color de fondo más claro para un diseño profesional */
+  color: #343a40; /* Color de texto más oscuro para mejor legibilidad */
+  margin: 0;
+}
+
+header {
+  background-color: #333; /* Color de fondo del encabezado */
+}
+
+.container {
+  max-width: 800px; /* Ancho máximo para el formulario */
+  margin-top: 50px; /* Espacio superior para centrar el formulario */
+}
+
+h2 {
+  font-weight: 700; /* Negrita para el título */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Color de fondo del botón */
+  border-color: #007bff; /* Color del borde del botón */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+  border-color: #0056b3; /* Color del borde al pasar el mouse */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #27313A; /* Color de fondo del pie de página */
+  color: #FFFFFF; /* Color del texto del pie de página */
+}
