@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de Alquiler - Monopatines Eléctricos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #222;
+      padding: 40px 15px;
+    }
+    .form-container {
+      background: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #16A34A;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    .btn-primary {
+      background-color: #16A34A;
+      border-color: #16A34A;
+      font-weight: 600;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 10px rgba(22,163,74,0.4);
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #4ade80;
+      border-color: #4ade80;
+      box-shadow: 0 5px 15px rgba(74,222,128,0.6);
+    }
+    .back-link {
+      display: block;
+      margin: 30px auto 0;
+      max-width: 150px;
+      text-align: center;
+      color: #16A34A;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid #16A34A;
+      padding: 8px 0;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(22,163,74,0.3);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #4ade80;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(74,222,128,0.6);
+    }
+    .alert-success {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Formulario de Alquiler</h1>
+    <form id="rentalForm" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required />
+        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required />
+        <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+      </div>
+      <div class="mb-3">
+        <label for="planSelect" class="form-label">Plan de Alquiler</label>
+        <select id="planSelect" class="form-select" required>
+          <option value="">Selecciona un plan</option>
+          <option value="Hora">Hora - $5</option>
+          <option value="Día Completo">Día Completo - $25</option>
+          <option value="Semana">Semana - $100</option>
+        </select>
+        <div class="invalid-feedback">Por favor selecciona un plan.</div>
+      </div>
+      <div class="mb-3">
+        <label for="fechaInicio" class="form-label">Fecha y hora de inicio</label>
+        <input type="datetime-local" class="form-control" id="fechaInicio" required />
+        <div class="invalid-feedback">Por favor selecciona la fecha y hora de inicio.</div>
+      </div>
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentarios adicionales</label>
+        <textarea class="form-control" id="comentarios" rows="3" placeholder="Si tienes alguna petición especial..."></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Enviar solicitud</button>
+      </div>
+    </form>
+  </div>
+
+  <a href="planes.html" class="back-link">← Volver a planes de alquiler</a>
+
+  <div id="successMessage" class="alert alert-success d-none" role="alert">
+    ¡Gracias por solicitar el alquiler! Nos pondremos en contacto contigo pronto.
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // On page load, read URL param to preselect plan
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const plan = urlParams.get('plan');
+    if(plan) {
+      const planSelect = document.getElementById('planSelect');
+      if([...planSelect.options].some(o => o.value === plan)) {
+        planSelect.value = plan;
+      }
+    }
+  });
+
+  // Form validation and submission simulation
+  const form = document.getElementById('rentalForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+    // Simulate successful submission
+    form.classList.remove('was-validated');
+    form.style.display = 'none';
+    successMessage.classList.remove('d-none');
+  });
+</script>
+</body>
+</html>
+
